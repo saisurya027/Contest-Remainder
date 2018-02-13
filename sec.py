@@ -40,7 +40,7 @@ for dat in items:
 	item=dat.find(class_="col-md-7 col-sm-8 event")
 #print(item)
 #for line in item.find_all('a'):
-#	strs.append(line.get('href'))
+###	strs.append(line.get('href'))
 	web=item.find(class_="title")
 	we=web.find('a')
 	t=str(we.get('href'))
