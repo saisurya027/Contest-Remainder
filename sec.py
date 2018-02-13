@@ -8,7 +8,6 @@ contest=soup.find(id="contests")
 items=contest.find_all(class_="row contest coming")
 for dat in items:
 	#dat=items[2].find(class_="col-md-5 col-sm-4")
-	
 	into=dat.find(class_="col-md-4 col-sm-6 timeleft countdown")
 	s=str(into.get_text())
 	st=""
@@ -41,4 +40,4 @@ for dat in items:
 	t=str(we.get('href'))
 	t="Link      : "+t
 	print(t)
-	print("****************************")
+	print("******All the best*********************")
