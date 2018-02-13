@@ -7,9 +7,7 @@ strs=[]
 contest=soup.find(id="contests")
 items=contest.find_all(class_="row contest coming")
 co=0
-comp="4"
 for dat in items:
-	#dat=items[2].find(class_="col-md-5 col-sm-4")
 	into=dat.find(class_="col-md-4 col-sm-6 timeleft countdown")
 	s=str(into.get_text())
 	st=""
@@ -20,9 +18,7 @@ for dat in items:
 			st=st+t
 		if(t.isalpha()):
 			ok=1
-	#print(st)
 	c=0
-	#co=0
 	if(ok==1):
 		for i in range(0,len(st)):
 			if(st[i]=='d'):
@@ -38,9 +34,6 @@ for dat in items:
 	else:
 		ok=1
 	item=dat.find(class_="col-md-7 col-sm-8 event")
-#print(item)
-#for line in item.find_all('a'):
-###	strs.append(line.get('href'))
 	web=item.find(class_="title")
 	we=web.find('a')
 	t=str(we.get('href'))
